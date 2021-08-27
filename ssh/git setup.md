@@ -16,8 +16,9 @@ Generate key pair
 
 ed25519 is the public key algorithm used
 
-When running the command in prompt you should set key path 
-As an example : **/home/savi/.ssh/id_ed25519_github**
+When running the command in prompt you should set key path. 
+as an example, **/home/savi/.ssh/id_ed25519_github**
+
 
 ### Set Public key to github
 
