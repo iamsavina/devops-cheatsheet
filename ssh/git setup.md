@@ -2,18 +2,35 @@
 
 ### Generate new key pair
 
-RSA keypair
+Generate key pair
 
-    ssh-keygen rsa
+    ssh-keygen -t ed25519 -C "sample@me.com"
 
-DSA keypair (Faster signature generation but slower for validation - Slower when encrypting but faster when decrypting)
+ed25519 is the public key algorithm used
 
-    ssh-keygen -t rsa
+Set path
+
+**/home/savi/.ssh/id_ed25519_github**
+
+### Set it to github
+
+Copy id_ed25519_github.pub file content
+
+Past in it https://github.com/settings/keys -> New SSH Keys
+
+### client setup
+
+Add ssh key to ssh-agent
+
+    eval "$(ssh-agent -s)"
+
+To shut down the agent
+
+    eval "$(ssh-agent -k)"
 
 
+Add your SSH private key to the ssh-agent
 
-For more security (RSA keypair)
+    ssh-add ~/.ssh/id_ed2519_github
 
 
-set path
-~/.ssh/rsa_github
