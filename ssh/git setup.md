@@ -7,7 +7,6 @@ Structure
 - ssh-agent bash command shortcut
 - [Convert HTTPS Github clones to use SSHGithub to SSH](#git_to_ssh)
 
-<br>
 
 ### Generate new key pair
 
@@ -19,7 +18,7 @@ Generate key pair
 
 - When running the command in prompt you should set key path. 
 as an example, **/home/savi/.ssh/id_ed25519_github**
-<br>
+
 
 ### Set Public key to github
 
@@ -66,8 +65,11 @@ Now you can type **gitssh** in terminal to run both commands at the same time
 
 ## <a name="git_to_ssh"></a> Convert HTTPS Github clones to use SSH
 
-Open .git/config file -> in [remote "origin"] change url variable from 
-    url = https://github.com/[username]/[repo name].git
+- Open .git folder in your repository folder
+- Open 'config' file with you text editor
+- Edit [remote "origin"] section url as below
+    - change url = https://github.com/[username]/[repo name].git
+    
     to
 
     url = git@github.com:[username]/[repo name].git
