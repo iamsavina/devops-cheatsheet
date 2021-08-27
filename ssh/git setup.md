@@ -18,7 +18,7 @@ Copy id_ed25519_github.pub file content
 
 Past in it https://github.com/settings/keys -> New SSH Keys
 
-### client setup
+### Agent setup
 
 Add ssh key to ssh-agent
 
@@ -33,9 +33,21 @@ Add your SSH private key to the ssh-agent
 
     ssh-add ~/.ssh/id_ed2519_github
 
-<<<<<<< HEAD
-set path
-~/.ssh/rsa_github
-=======
 
->>>>>>> de9d1a88b3a1dedce5f7b1b71b374128f107e493
+**Why we need an ssh-agent?**
+ssh-agent is a program that runs in the background and keeps your key loaded into main memory (RAM), so that you don't need to enter your passphrase every time you need to use the key. 
+
+
+### Setup agent automatically 
+
+add following command to ~/.bashrc file at the end of the file
+
+    alias gitssh="eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed2519_github"
+
+Now type source ~/.bashrc to reload new configurations
+
+Then, in the terminal type following command to execute new config
+
+    alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_ed2519_github"
+
+Now you can type **gitssh** in terminal to run both commands at the same time
