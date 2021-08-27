@@ -1,7 +1,12 @@
-## Git Setup for SSH authentication
+# Git Setup for SSH authentication
 
+Structure
+- Generate new key pair
+- Set public key to github
+- ssh-agent setup
+- ssh-agent bash command shortcut
+- [Convert HTTPS Github clones to use SSHGithub to SSH](#git_to_ssh)
 
-Goto [Github to SSH](#git_to_ssh)
 
 ### Generate new key pair
 
@@ -15,7 +20,7 @@ Set path
 
 **/home/savi/.ssh/id_ed25519_github**
 
-### Set it to github
+### Set Public key to github
 
 Copy id_ed25519_github.pub file content
 
