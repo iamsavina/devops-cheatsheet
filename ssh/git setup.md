@@ -3,9 +3,11 @@
 ### Generate new key pair
 
 RSA keypair
+
     ssh-keygen rsa
 
 DSA keypair (Faster signature generation but slower for validation - Slower when encrypting but faster when decrypting)
+
     ssh-keygen -t rsa
 
 
