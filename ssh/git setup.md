@@ -19,13 +19,14 @@ ed25519 is the public key algorithm used
 
 When running the command in prompt you should set key path. 
 as an example, **/home/savi/.ssh/id_ed25519_github**
-<br><br>
+<br>
 
 ### Set Public key to github
 
 Copy id_ed25519_github.pub file content
 
 Past in it https://github.com/settings/keys -> New SSH Keys
+<br>
 
 ### Agent setup
 
@@ -46,7 +47,7 @@ Add your SSH private key to the ssh-agent
 **Why we need an ssh-agent?**
 ssh-agent is a program that runs in the background and keeps your key loaded into main memory (RAM), so that you don't need to enter your passphrase every time you need to use the key. 
 
-
+<br><br>
 ### Setup agent automatically 
 
 add following command to ~/.bashrc file at the end of the file
