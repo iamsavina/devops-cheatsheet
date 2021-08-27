@@ -1,5 +1,8 @@
 ## Git Setup for SSH authentication
 
+
+Goto [Github to SSH](#git_to_ssh)
+
 ### Generate new key pair
 
 Generate key pair
@@ -54,11 +57,11 @@ Now you can type **gitssh** in terminal to run both commands at the same time
 
 
 
-## Merge https cloned repository into SSH 
+## <a name="git_to_ssh"></a> Convert HTTPS Github clones to use SSH
 
 Open .git/config file -> in [remote "origin"] change url variable from 
     url = https://github.com/[username]/[repo name].git
     to
-    
+
     url = git@github.com:[username]/[repo name].git
 
