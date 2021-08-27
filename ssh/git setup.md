@@ -70,5 +70,5 @@ Now you can type **gitssh** in terminal to run both commands at the same time
 - Edit [remote "origin"] section url as below
     - change "url = https://github.com/[username]/[repo name].git" to
 
-        url = git@github.com:[username]/[repo name].git
+    url = git@github.com:[username]/[repo name].git
 
