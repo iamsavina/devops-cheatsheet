@@ -7,6 +7,7 @@ Structure
 - ssh-agent bash command shortcut
 - [Convert HTTPS Github clones to use SSHGithub to SSH](#git_to_ssh)
 
+<br>
 
 ### Generate new key pair
 
@@ -18,7 +19,8 @@ ed25519 is the public key algorithm used
 
 When running the command in prompt you should set key path. 
 as an example, **/home/savi/.ssh/id_ed25519_github**
-<br><br >
+<br><br>
+
 ### Set Public key to github
 
 Copy id_ed25519_github.pub file content
