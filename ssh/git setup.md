@@ -47,8 +47,8 @@ Add your SSH private key to the ssh-agent
 **Why we need an ssh-agent?**
 ssh-agent is a program that runs in the background and keeps your key loaded into main memory (RAM), so that you don't need to enter your passphrase every time you need to use the key. 
 
-<br><br>
-### Setup agent automatically 
+<br>
+### Setup agent by single command
 
 add following command to ~/.bashrc file at the end of the file
 
