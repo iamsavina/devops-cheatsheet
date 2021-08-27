@@ -18,8 +18,7 @@ ed25519 is the public key algorithm used
 
 When running the command in prompt you should set key path. 
 as an example, **/home/savi/.ssh/id_ed25519_github**
-
-
+<br>
 ### Set Public key to github
 
 Copy id_ed25519_github.pub file content
