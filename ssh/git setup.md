@@ -14,6 +14,5 @@ DSA keypair (Faster signature generation but slower for validation - Slower when
 
 For more security (RSA keypair)
 
-
 set path
 ~/.ssh/rsa_github
