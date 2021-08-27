@@ -2,4 +2,16 @@
 
 ### Generate new key pair
 
-    	ssh-keygen -t rsa
+RSA keypair
+    ssh-keygen rsa
+
+DSA keypair (Faster signature generation but slower for validation - Slower when encrypting but faster when decrypting)
+    ssh-keygen -t rsa
+
+
+
+For more security (RSA keypair)
+
+
+set path
+~/.ssh/rsa_github
