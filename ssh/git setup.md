@@ -24,7 +24,7 @@ Add ssh key to ssh-agent
 
     eval "$(ssh-agent -s)"
 
-To shut down the agent
+To shut down the agent (if needed)
 
     eval "$(ssh-agent -k)"
 
@@ -51,3 +51,14 @@ Then, in the terminal type following command to execute new config
     alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_ed2519_github"
 
 Now you can type **gitssh** in terminal to run both commands at the same time
+
+
+
+## Merge https cloned repository into SSH 
+
+Open .git/config file -> in [remote "origin"] change url variable from 
+    url = https://github.com/[username]/[repo name].git
+    to
+    
+    url = git@github.com:[username]/[repo name].git
+
