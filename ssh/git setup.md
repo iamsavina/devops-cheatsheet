@@ -14,10 +14,11 @@ Generate key pair
 
     ssh-keygen -t ed25519 -C "sample@me.com"
 
+- -t is used specify type of the key
 - ed25519 is the public key algorithm used
-
-- When running the command in prompt you should set key path. 
-as an example, **/home/savi/.ssh/id_ed25519_github**
+- string after the -C is a comment - used to identify the keypair
+- When running the command, in prompt you should set key path. 
+as an example, **/home/[username]/.ssh/id_ed25519_github**
 
 
 ### Set Public key to github
