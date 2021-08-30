@@ -52,13 +52,9 @@ ssh-agent is a program that runs in the background and keeps your key loaded int
 
 add following command to ~/.bashrc file at the end of the file
 
-    alias gitssh="eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed2519_github"
+    alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_ed2519_github"
 
 Now type source ~/.bashrc to reload new configurations
-
-Then, in the terminal type following command to execute new config
-
-    alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_ed2519_github"
 
 Now you can type **gitssh** in terminal to run both commands at the same time
 
