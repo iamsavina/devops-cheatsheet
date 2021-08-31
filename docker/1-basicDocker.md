@@ -1,6 +1,5 @@
 Table of content
-- [Set tag name](#setTagName)
-- [Run the image](#runTheImage)
+- [Set tag name](#set-tag-name-to-image)
 - [Run the image](#running-the-image)
 
 
@@ -40,11 +39,11 @@ Deleting the image
     docker image rm [imageid]
 
 
-###  <a name="setTagName"></a>Set tag name to image
+###  Set tag name to image
 
     docker build -t node-image .
 
 
-###  <a name="runTheImage"></a>Running the image
+###  Running the image
 
     docker run --name my-node-app node-image
