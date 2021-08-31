@@ -1,3 +1,7 @@
+Table of content
+- [Set tag name](#setTagName)
+- [Run the image](#runTheImage)
+
 
 ### Setting Image
 
@@ -17,3 +21,29 @@ CMD ["node","index.js"]
 + run npm insall will install all the dependencies
 + COPY - first dot is "this" directory and './' is the /app directory in the container
 + EXPOSE 8000 is the port which app is running
+
+Now, run 
+    
+    docker build .
+
+In the working directory to create the image
+
+<br>
+
+Run following command to list all the images
+
+    docker image ls
+
+Deleting the image
+
+    docker image rm [imageid]
+
+
+###  <a name="setTagName"></a>Set tag name to image
+
+    docker build -t node-image .
+
+
+###  <a name="runTheImage"></a>Running the image
+
+    docker run --name my-node-app node-image
