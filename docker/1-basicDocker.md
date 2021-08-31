@@ -1,6 +1,7 @@
 Table of content
 - [Set tag name](#setTagName)
 - [Run the image](#runTheImage)
+- [Run the image](#running-the-image)
 
 
 ### Setting Image
