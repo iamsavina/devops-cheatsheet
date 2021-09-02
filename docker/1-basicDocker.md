@@ -47,7 +47,7 @@ Deleting the image
 
 ###  Running the image
 
-    docker run -p 8000:8000 -d --name my-node-app node-app-image
+    docker run -p 8000:8000 -d --name node-app-container node-app-image
 
 + -p => port forwarding
 + -d => Runs in detached mode / in the background
@@ -56,9 +56,16 @@ Deleting the image
 
 ### Access container console
 
-    docker exec -it my-node-app bash
+    docker exec -it node-app-container bash
 
 + exec => allows to run command in a running container
 + -it => access through interactive mode
+
+
+### show running containers
+
+    docker ps
+
+    docker container ls
 
 
