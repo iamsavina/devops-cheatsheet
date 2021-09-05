@@ -62,10 +62,14 @@ Deleting the image
 + -it => access through interactive mode
 
 
+### read logs
+
+    docker logs node-app-container
+    
+
 ### show running containers
 
     docker ps
 
     docker container ls
-
 
