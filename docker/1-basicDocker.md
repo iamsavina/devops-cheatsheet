@@ -22,6 +22,7 @@ CMD ["node","index.js"]
 + run npm insall will install all the dependencies
 + COPY - first dot is "this" directory and './' is the /app directory in the container
 + EXPOSE 8000 is the port which app is running - It a 'useless' command used for documentation purposes
+In recent versions of Dockerfile, EXPOSE doesn't have any operational impact anymore, it is just informative
 
 Now, run 
     
