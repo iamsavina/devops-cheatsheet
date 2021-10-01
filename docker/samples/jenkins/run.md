@@ -1,1 +1,1 @@
-docker run -dp 8080:8080 -p 50000:50000 -v $(pwd):/var/ jenkins:2.60.3
+docker run -dp 8080:8080 -p 50000:50000 -v $(pwd):/var/ jenkins/jenkins
