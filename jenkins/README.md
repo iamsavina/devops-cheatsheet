@@ -8,7 +8,7 @@
 + Set password
 + Save
 
-## Git auto deploy
+## GitHub auto deploy
 
 + Install following plugins
     + Manage Jenkins > Plugin Manager > Available
