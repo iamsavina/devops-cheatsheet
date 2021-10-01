@@ -1,0 +1,4 @@
+# Setup
+
+> Install somehow 🤣
+
