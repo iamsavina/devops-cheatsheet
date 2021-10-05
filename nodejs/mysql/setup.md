@@ -9,7 +9,7 @@ const db = mysql.createConnection({
     host : "[ip]",
     user : "neo",
     password: "wonderland",
-    database: "catchdesk",
+    database: "matrix",
     dateStrings: true,
     port: '3306'
 });
