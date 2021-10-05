@@ -43,3 +43,13 @@ GRANT ALL PRIVILEGES ON *.* TO 'neo'@'localhost' WITH GRANT OPTION;
 CREATE USER 'neo'@'%' IDENTIFIED BY 'wonderland';
 GRANT ALL PRIVILEGES ON *.* TO 'neo'@'%' WITH GRANT OPTION;
 ```
+
+### Rejecting connection - Firewall is OK
+
+Configure following file
+
+    sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+Add bind address to allow all
+
+    bind-address            = 0.0.0.0
