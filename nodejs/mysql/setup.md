@@ -35,7 +35,7 @@ module.exports = db;
     + check firewall
     + ping the server
 
-+ Try create new user & give privileges
++ Try to create a new user & give privileges
 ```
 CREATE USER 'neo'@'localhost' IDENTIFIED BY 'wonderland';
 GRANT ALL PRIVILEGES ON *.* TO 'neo'@'localhost' WITH GRANT OPTION;
