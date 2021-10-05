@@ -53,3 +53,7 @@ Configure following file
 Add bind address to allow all
 
     bind-address            = 0.0.0.0
+
+Restart mysql service
+
+    sudo systemctl restart mysql
