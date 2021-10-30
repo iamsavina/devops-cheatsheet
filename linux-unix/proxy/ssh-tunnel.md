@@ -4,7 +4,11 @@ ssh root@45.45.45.45
 ssh -f -N -D 1080 root@45.45.45.45
 
 -f = background
+<<<<<<< HEAD
 -N = don't execute parciulate command
+=======
+-N = don't execute any command
+>>>>>>> c9ddd498f90691c4600477a834e862d153bce92d
 -D = bind address
 
 
