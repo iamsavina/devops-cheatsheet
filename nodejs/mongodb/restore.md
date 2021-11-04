@@ -1,0 +1,1 @@
+mongorestore --uri="mongodb://user@127.0.0.1:27017/instantpickup?authSource=admin" /filepath
